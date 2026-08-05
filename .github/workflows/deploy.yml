@@ -21,16 +21,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # أزلنا التخزين المؤقت (cache) تماماً لنقطع خطأ المسار نهائياً
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
+      # تم التصحيح هنا: من npm ci إلى npm install (ليقبل الملفات الموجودة)
       - name: Install dependencies
         working-directory: ./healthcare
-        run: npm ci
+        run: npm install
 
+      # تم التصحيح هنا: يجب أن يكون npm run build لكي يبني الموقع
       - name: Build
         working-directory: ./healthcare
         run: npm run build
