@@ -1,0 +1,60 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      # الخطوة الأهم: ندخل إلى مجلد healthcare
+      - name: Change directory to healthcare
+        run: cd healthcare
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          # نحدد له أين يجد ملف package-lock.json
+          cache: npm
+          cache-dependency-path: healthcare/package-lock.json
+
+      - name: Install dependencies
+        # نغير مسار العمل للدخول للمجلد الفرعي
+        working-directory: ./healthcare
+        run: npm ci
+
+      - name: Build
+        working-directory: ./healthcare
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # نحدد له أن ملفات البناء موجودة داخل healthcare/build
+          path: ./healthcare/build
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
