@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff ;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color : #1F2278;
+    --oreng-color : #f17732 ;
+    --btn-color : #565acf ;
+}
+section , footer , header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none !important;
+}
+span {
+    display: block;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+button {
+    text-align: center;
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 4px;
+}
+p {
+    line-height: 28px;
+}
+input {
+    box-sizing: border-box;
+    border: 1px solid white;
+    text-align: left;
+    padding: 5px 15px;
+    color: #333;
+    font-family: sans-serif;
+}
+.calendar-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.calendar-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+/* تنسيق الزر كما في الصورة */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;      /* المسافة من الأسفل */
+    right: 30px;       /* المسافة من اليمين */
+    width: 45px;       /* عرض الزر */
+    height: 45px;      /* ارتفاع الزر */
+    background-color: #1b5bf5; /* اللون الأزرق */
+    color: white;      /* لون السهم أبيض */
+    border: none;      /* إزالة الحدود */
+    border-radius: 12px; /* تدوير الحواف كما في الصورة */
+    cursor: pointer;
+    font-size: 22px;   /* حجم السهم */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(27, 91, 245, 0.3); /* ظل خفيف */
+    
+    /* إخفاء الزر افتراضياً */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+  
+  /* عند تحريك الماوس فوقه */
+  .scroll-top-btn:hover {
+    background-color: #1447c9; /* لون أزرق أغمق عند التمرير */
+    transform: translateY(-3px); /* يتحرك قليلاً للأعلى */
+    box-shadow: 0 6px 15px rgba(27, 91, 245, 0.5);
+  }
+  
+  /* هذا الكلاس هو الذي يظهر الزر عند النزول للأسفل */
+  .scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+  }

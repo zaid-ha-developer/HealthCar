@@ -1,0 +1,12 @@
+/* About.css */
+
+.about-page {
+    overflow-x: hidden;
+}
+
+/* ===== أي تنسيقات إضافية للصفحة ===== */
+.about-page .banner {
+    margin-bottom: 0;
+}
+
+/* تنسيقات إضافية إذا احتجتها */
