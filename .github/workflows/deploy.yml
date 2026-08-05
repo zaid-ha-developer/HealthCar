@@ -21,13 +21,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # التعديل الصحيح: حذفنا working-directory (لأنه غير مدعوم)، وحددنا المسار الكامل
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: 'npm'
-          working-directory: ./healthcare
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: healthcare/package-lock.json
 
       - name: Install dependencies
         working-directory: ./healthcare
