@@ -1,0 +1,112 @@
+/* ServicesPage.css */
+
+/* ===== DOCTORS SECTION ===== */
+.doctors-page-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-header h5 {
+    color: var(--oreng-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-header h2 {
+    color: var(--main-color);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+/* ===== DOCTOR CARD ===== */
+.doctor-page-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.06);
+}
+
+.doctor-page-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-page-image {
+    height: 280px;
+    overflow: hidden;
+}
+
+.doctor-page-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.doctor-page-card:hover .doctor-page-image img {
+    transform: scale(1.05);
+}
+
+.doctor-page-info {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.doctor-page-info h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.doctor-page-info .specialty {
+    color: var(--oreng-color);
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.doctor-beds {
+    display: inline-block;
+    background: rgba(86, 90, 207, 0.1);
+    color: var(--btn-color);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .section-header h2 {
+        font-size: 30px;
+    }
+
+    .doctor-page-image {
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .doctors-page-section {
+        padding: 50px 0;
+    }
+
+    .section-header h2 {
+        font-size: 26px;
+    }
+
+    .doctor-page-image {
+        height: 220px;
+    }
+}

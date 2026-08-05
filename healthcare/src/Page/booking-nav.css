@@ -1,0 +1,10 @@
+/* Booking.css */
+
+.booking-page {
+    overflow-x: hidden;
+}
+
+/* أي تنسيقات إضافية إذا احتجتها */
+.booking-page .appointment-section {
+    padding-top: 0;
+}

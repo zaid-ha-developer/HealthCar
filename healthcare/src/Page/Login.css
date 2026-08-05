@@ -1,0 +1,219 @@
+/* Login.css */
+
+.login-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* ===== LOGIN WRAPPER ===== */
+.login-wrapper {
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== HEADER ===== */
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.login-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.login-logo h2 {
+    color: var(--main-color);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.login-header h3 {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    color: #888;
+    font-size: 15px;
+}
+
+/* ===== FORM ===== */
+.login-wrapper form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.login-wrapper form .form-control {
+    width: 100%;
+    height: 50px;
+    padding: 10px 45px 10px 45px;
+    border: 2px solid #e8e8e8;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.login-wrapper form .form-control:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 0 4px rgba(86, 90, 207, 0.1);
+    outline: none;
+    background: #fff;
+}
+
+.login-wrapper form .form-control::placeholder {
+    color: #aaa;
+}
+
+/* ===== INPUT ICON ===== */
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 16px;
+    z-index: 10;
+}
+
+/* ===== PASSWORD TOGGLE ===== */
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 5px;
+}
+
+.password-toggle:hover {
+    color: var(--btn-color);
+}
+
+/* ===== FORGOT PASSWORD ===== */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: var(--btn-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: var(--oreng-color);
+    text-decoration: underline;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.btn-login {
+    width: 100%;
+    height: 50px;
+    background: var(--btn-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.btn-login:hover {
+    background: var(--oreng-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(241, 119, 50, 0.3);
+}
+
+/* ===== FOOTER ===== */
+.login-footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.login-footer p {
+    color: #888;
+    font-size: 15px;
+    margin: 0;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: var(--btn-color);
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+    padding: 0;
+}
+
+.toggle-btn:hover {
+    color: var(--oreng-color);
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .login-section {
+        padding: 50px 0;
+        min-height: auto;
+    }
+
+    .login-wrapper {
+        padding: 30px 20px;
+        border-radius: 12px;
+    }
+
+    .login-logo h2 {
+        font-size: 26px;
+    }
+
+    .login-logo img {
+        height: 40px;
+    }
+
+    .login-header h3 {
+        font-size: 20px;
+    }
+
+    .login-wrapper form .form-control {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .btn-login {
+        height: 45px;
+        font-size: 16px;
+    }
+}
