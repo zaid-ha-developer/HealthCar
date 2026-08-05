@@ -1,0 +1,53 @@
+.numbers-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--main-color), var(--btn-color));
+    color: #fff;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px 20px;
+    transition: all 0.4s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: var(--oreng-color);
+}
+
+.stat-card h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .numbers-section {
+        padding: 50px 0;
+    }
+
+    .stat-card h2 {
+        font-size: 36px;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+}

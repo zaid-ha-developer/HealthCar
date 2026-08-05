@@ -1,0 +1,89 @@
+:root {
+    --main-color : #1F2278;
+    --oreng-color : #f17732 ;
+    --btn-color : #565acf ;
+}
+footer img {
+    width: auto;
+    height: 45px;
+    margin: 15px 0px;
+
+}
+footer p {
+    font-size: 18px;
+
+}
+footer .footer-contact {
+    display: flex;
+}
+footer .footer-contact .footer-icon {
+    margin: 7px 20px 0px 0px ;
+    width: 40px;
+    height: 40px;
+    background-color: var(--oreng-color);
+    display: flex;             
+    justify-content: center; 
+    align-items: center;  
+    border-radius: 30px 30px 0 30px; 
+}
+
+footer .footer-contact .footer-icon .call-icon {
+    color: #fff;
+    font-size: 26px;
+}
+footer .footer-contact h6 {
+    color: var(--oreng-color);
+    margin-bottom: 7px;
+    font-size: 16p;
+}
+footer .footer-contact h4 {
+    color: var(--main-color);
+    font-size: 18px;
+    margin-top: 10px;
+}
+footer h2{
+    color: var(--main-color);
+    font-size: 30px;
+    margin: 15px 0px;
+}
+footer ul {
+    margin-top: 20px;
+}
+footer ul li {
+    margin-top: 10px;
+}
+footer ul li a{
+    color: #333;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+footer form {
+    margin: 15px 0px;
+}
+footer form input {
+    border: 1px solid #ccc;
+    margin: 10px 0px;
+    width: 100%;
+}
+footer form button {
+    width: 100%;
+    background-color: var(--oreng-color) !important;
+    border: 1px solid var(--oreng-color) !important;
+    color: #fff;
+}
+footer ul.social li a{
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+footer .footer-buttom{
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px 0px;
+    border-top: 1px solid #ccc;
+}
+footer .footer-buttom span {
+    display: block;
+    margin-top: 10px;
+}
