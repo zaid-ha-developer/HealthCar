@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HealthCar/static/css/main.ee89c8f8.css",
-    "main.js": "/HealthCar/static/js/main.503c708d.js",
+    "main.js": "/HealthCar/static/js/main.b26c70b4.js",
     "static/js/453.4d7d58b0.chunk.js": "/HealthCar/static/js/453.4d7d58b0.chunk.js",
     "static/media/background.PNG": "/HealthCar/static/media/background.b57dbe64e13e6e23987f.PNG",
     "static/media/doctor.7c2bc96d.png": "/HealthCar/static/media/doctor.7c2bc96d.7c2bc96d67d3eba1d64a.7c2bc96d67d3eba1d64a.png",
@@ -20,11 +20,11 @@
     "static/media/about-doctor-3.jpg": "/HealthCar/static/media/about-doctor-3.fa689b1037dbf69567a3.jpg",
     "index.html": "/HealthCar/index.html",
     "main.ee89c8f8.css.map": "/HealthCar/static/css/main.ee89c8f8.css.map",
-    "main.503c708d.js.map": "/HealthCar/static/js/main.503c708d.js.map",
+    "main.b26c70b4.js.map": "/HealthCar/static/js/main.b26c70b4.js.map",
     "453.4d7d58b0.chunk.js.map": "/HealthCar/static/js/453.4d7d58b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee89c8f8.css",
-    "static/js/main.503c708d.js"
+    "static/js/main.b26c70b4.js"
   ]
 }
