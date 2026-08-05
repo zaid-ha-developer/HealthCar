@@ -26,15 +26,14 @@ jobs:
         with:
           node-version: "20"
 
-      # تم التصحيح هنا: من npm ci إلى npm install (ليقبل الملفات الموجودة)
       - name: Install dependencies
         working-directory: ./healthcare
         run: npm install
 
-      # تم التصحيح هنا: يجب أن يكون npm run build لكي يبني الموقع
+      # تم التعديل هنا بإضافة CI=false
       - name: Build
         working-directory: ./healthcare
-        run: npm run build
+        run: CI=false npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/HealthCar/static/css/main.ee89c8f8.css",
+    "main.js": "/HealthCar/static/js/main.b7b99cfd.js",
+    "static/js/453.4d7d58b0.chunk.js": "/HealthCar/static/js/453.4d7d58b0.chunk.js",
+    "static/media/background.PNG": "/HealthCar/static/media/background.b57dbe64e13e6e23987f.PNG",
+    "static/media/doctor.7c2bc96d.png": "/HealthCar/static/media/doctor.7c2bc96d.7c2bc96d67d3eba1d64a.7c2bc96d67d3eba1d64a.png",
+    "static/media/news-2.jpg": "/HealthCar/static/media/news-2.67db6c474a828bd7a0cd.jpg",
+    "static/media/news3.jpg": "/HealthCar/static/media/news3.89b8315141d75bd31ced.jpg",
+    "static/media/news-1.jpg": "/HealthCar/static/media/news-1.a3848a1189e2114e1b47.jpg",
+    "static/media/ourteam6.jpg": "/HealthCar/static/media/ourteam6.be2a77adde3dc48f9d5b.jpg",
+    "static/media/ourteam4.jpg": "/HealthCar/static/media/ourteam4.9045579a47c3fd89b17c.jpg",
+    "static/media/mobile-pic.png": "/HealthCar/static/media/mobile-pic.f82d73222992d2101a09.png",
+    "static/media/ourteam1.jpg": "/HealthCar/static/media/ourteam1.22ac1d594f69ddaf3e08.jpg",
+    "static/media/ourteam2.jpg": "/HealthCar/static/media/ourteam2.d03a0686030bcd2f05ec.jpg",
+    "static/media/about-dotor-2.jpg": "/HealthCar/static/media/about-dotor-2.0593bc2fd8a13cf8c19f.jpg",
+    "static/media/ourteam3.jpg": "/HealthCar/static/media/ourteam3.0d822ecc51b2532abe0e.jpg",
+    "static/media/ourteam5.jpg": "/HealthCar/static/media/ourteam5.24eb182159ea2d58610f.jpg",
+    "static/media/about-doctor-1.jpg": "/HealthCar/static/media/about-doctor-1.ad1ed7ee8284087fe9ee.jpg",
+    "static/media/about-doctor-3.jpg": "/HealthCar/static/media/about-doctor-3.fa689b1037dbf69567a3.jpg",
+    "index.html": "/HealthCar/index.html",
+    "main.ee89c8f8.css.map": "/HealthCar/static/css/main.ee89c8f8.css.map",
+    "main.b7b99cfd.js.map": "/HealthCar/static/js/main.b7b99cfd.js.map",
+    "453.4d7d58b0.chunk.js.map": "/HealthCar/static/js/453.4d7d58b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee89c8f8.css",
+    "static/js/main.b7b99cfd.js"
+  ]
+}
