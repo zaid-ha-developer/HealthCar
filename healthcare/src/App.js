@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { Route, RouterProvider, createHashRouter, createRoutesFromElements } from 'react-router-dom';
 import './App.css';
 import Home from './Page/Home';
 import Layout from './Component/Layout/Layout';
@@ -13,8 +13,7 @@ import ServicesPage from './Page/ServicesPage-nav';
 import ServiceDetails from './Page/ServiceDetails-nav';
 
 
-
-const routes = createBrowserRouter(createRoutesFromElements(
+const routes = createHashRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
     <Route index element={<Home />} />
     <Route path='home' element={<Home />} />
@@ -26,7 +25,6 @@ const routes = createBrowserRouter(createRoutesFromElements(
     <Route path='services' element={<ServicesPage />} />
     <Route path='service-details' element={<ServiceDetails />} />
     <Route path='contact' element={<Contact />} />
-    {/* ما في مسار منفصل لـ WorkingProcess لأنه جزء من Home */}
   </Route>
 ))
 
